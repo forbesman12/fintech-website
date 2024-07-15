@@ -1,0 +1,358 @@
+@media only screen and (min-width: 375px) and (max-width: 430px) {
+nav{
+    width: 100%;
+}
+/* style */
+.navItems {
+    display: none;
+  }
+  
+  /* Add a hamburger menu icon */
+  .navItems.hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    color: var(--Base-Base-Black, #0A0A0B);
+  }
+  
+  .navItems.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--Base-Base-Black, #0A0A0B);
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navItems.hamburger span:nth-child(2) {
+    margin-bottom: 5px;
+  }
+  
+  .navItems.hamburger span:last-child {
+    margin-bottom: 0;
+  }
+  
+  .navItems.hamburger.active span {
+    background-color: var(--Base-Base-White, #FAFAFA);
+  }
+  
+  .navItems.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .navItems.hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navItems.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  /* Show the nav items when the hamburger menu is clicked */
+  .navItems.hamburger.active + .navItems {
+    display: block;
+  }
+  .navItems {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: var(--Base-Base-White, #FAFAFA);
+    padding: 20px;
+    border-bottom: 1px solid var(--Base-Base-Black, #0A0A0B);
+  }
+  .navItems a {
+    display: block;
+    padding: 10px;
+  }  
+/* style */
+
+.logo>img{
+    width: 170px;
+}
+.Jumbotron{
+    background: radial-gradient(243.32% 243.32% at 50% -68.85%, rgba(0, 0, 0, 0.67) 0%, rgba(131, 128, 128, 0.13) 1.35%, #000000 37.24%, #000 57.27%);
+    width: 100%;
+    height: 365px;
+}
+.text{
+    margin-top: 3rem;
+    width: 67%;
+}
+.textp>p{
+    font-size: 12px;
+}
+.text>h1{
+    font-size: 20px;
+    font-weight:800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+}
+.spOne{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+}
+.spTwo{
+    font-weight: 800;
+    font-size: 13px;
+}
+.buttonsdiv{
+    width: 100%;
+}
+.buttonsdiv>button{
+    border-radius: 16px;
+    padding: var(--Spacing-sm, 5px) var(--Spacing-ml, 10px);
+    font-size: 11px;
+    width: 120px;
+}
+.buttonsdiv>p{
+    font-size: 11px;
+    padding-block: var(--Spacing-xs, 7px);
+    gap: 1px;
+}
+/* style for section two */
+.sectionTwo{
+    width: 100%;
+    background-image: none;
+    height: 530px;
+    padding: 0px;
+}
+.sectionTwo>h2{
+    margin-top: 35px;
+    font-size: 14px;
+    color: #fff;
+    background-color:  #59C4F3;
+    padding: var(--Spacing-s, 5px);
+    border-radius: var(--Spacing-s, 15px);
+}
+.sectionTwo>p{
+    font-size: 16px;
+}
+.sectionTwo>p>span{
+    font-size: 16px;
+}
+.layout{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.box{
+    gap: 15px;
+    padding: 17px;
+    width: 280px ;
+}
+.layout>.box:nth-child(2){
+    gap: 15px;
+    padding: 17px;
+    width: 280px ;
+}
+.box>img{
+    width: 50px;
+}
+.box>h2{
+    font-size: 23px;
+}
+.box>p{
+    padding-bottom: 40px;
+    font-size: 17px;
+}
+.sectionTwo>h3{
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+/* style for section three */
+.three{
+    padding: 25px;
+}
+.threelayout>h1{
+    padding-bottom: 30px;
+    font-size: 22px;
+}
+.servicesLayout{
+    flex-direction: column;
+}
+.frame1{
+    width: 340px;
+}
+.frame1>img{
+    width: 40px;
+    height: 40px;
+}
+.frameText>h1{
+    font-size: 19px;
+}
+.frameText>p{
+    font-size: 12px;
+}
+
+.payBills{
+    margin-top: 20px;
+    flex-direction: column;
+}
+.four{
+    /* border: 2px solid #fff; */
+    height: 375px;
+    padding-top: 20px;
+    padding-inline: 0px;
+}
+.card{
+    flex-direction: column;
+}
+.texts{
+    width: 100%;
+}
+.partText>h1{
+    margin-top: 28px;
+    font-size: 14px;
+}
+.partText>p{
+font-size: 11px;
+opacity: 0.7;
+}
+.phone>img{
+    /* border: 2px solid#fff; */
+    width: 125px;
+    height: 180px;
+    flex-shrink: 0;
+} 
+.rec{
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    gap: 10px;
+}
+.rec>img{
+    margin-top: 5px;
+    width: 140px;
+    height: 84px;
+}
+.rap>h1{
+    margin-top: 0px;
+    font-size: 14px;
+}
+.rap>p{
+    font-size: 11px;
+    opacity: 0.7;
+}
+
+/* style for section5 */
+.five{
+    height: 765px;
+    padding: 0px;
+}
+.fiveLayout{
+    flex-direction: column;
+    padding: 15px;
+}
+.fivetext{
+    margin-top: 15px;
+}
+.fivetext>h1{
+    text-align: center;
+}
+.advantage{
+    padding-inline: 8px;
+    width: 100%;
+}
+.advantage>h3{
+    font-size: 24px;
+}
+.advantage>p{
+    /* border: 2px solid #fff; */
+    font-size: 14px;
+}
+/* style for 2Phones */
+.phonebox{
+    margin-top: 25px;
+    justify-content: center;
+    width: 100%;
+}
+.phonebox>img{
+    height: 210px;
+    max-width: 100%;
+}
+/* style for section 6 */
+.six{
+    /* border: 2px solid orange; */
+    flex-direction: column;
+}
+.oneBox{
+    width: 100%;
+}
+.oneImage>img{
+    height: 110px;
+}
+.oneText>h1{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.oneText>p{
+    margin-top: 6px;
+    font-size: 14px;
+}
+/* .partTwo{
+    border: 2px solid red;
+} */
+.twoBox{
+    row-gap: 40px;
+    padding-left: 15px;
+}
+.up>h1{
+    font-size: 1.2rem;
+}
+.up>p{
+    font-size: 13px;
+}
+/* style for section7 */
+/* .seven{
+    height: 300px;
+} */
+.sevenLayout>h1{
+    font-size: 28px;
+}
+.icon>img{
+    width: 40%;
+    height: 55px;
+}
+.icon>img>:nth-child(2){
+    width: 10px;
+}
+
+/* style for footer */
+footer{
+    flex-direction: column;
+}
+.digital{
+    gap: 13px;
+}
+.digital>img{
+    width: 50px;
+}
+.digital>h1{
+    font-size: 20px;
+    color: #59C4F3;
+}
+.digital>h1>span{
+    font-size: 15px;
+    font-weight: 700;
+    }
+.flexLayoutbox{
+    flex-direction: column;
+}
+.flex1>p{
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-size: 1.27rem;
+    font-weight: 700;
+}
+.company>h3{
+    font-weight: 800;
+    font-size: 20px;
+}
+}
