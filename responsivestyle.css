@@ -3,81 +3,60 @@ nav{
     width: 100%;
 }
 /* style */
-.navItems {
-    display: none;
-  }
-  
-  /* Add a hamburger menu icon */
-  .navItems.hamburger {
-    display: block;
+nav{
+    padding: 10px var(--Spacing-base, 16px);
+    gap: 16px;
+    align-items: center;
+   }
+    .menuItems {
+        display: none; /* hide the menu items by default */
+    }
+    .menuToggle {
+        display: block;
     cursor: pointer;
     padding: 10px;
-    border: none;
     background: transparent;
     font-size: 24px;
     color: var(--Base-Base-Black, #0A0A0B);
-  }
-  
-  .navItems.hamburger span {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: var(--Base-Base-Black, #0A0A0B);
-    margin-bottom: 5px;
-    border-radius: 2px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .navItems.hamburger span:nth-child(2) {
-    margin-bottom: 5px;
-  }
-  
-  .navItems.hamburger span:last-child {
-    margin-bottom: 0;
-  }
-  
-  .navItems.hamburger.active span {
-    background-color: var(--Base-Base-White, #FAFAFA);
-  }
-  
-  .navItems.hamburger.active span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  
-  .navItems.hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .navItems.hamburger.active span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  
-  /* Show the nav items when the hamburger menu is clicked */
-  .navItems.hamburger.active + .navItems {
-    display: block;
-  }
-  .navItems {
+    }
+    .menuToggle:hover {
+        transition: all 0.3s ease-in-out;
+    }
+    /* Style for the hamburger menu */
+.menuItems.active {
     display: block;
     position: absolute;
-    top: 60px;
-    left: 0;
-    background: var(--Base-Base-White, #FAFAFA);
+    width: 100%;
+    top: 66px;
+    right: 0;
+    background-color: #fff;
     padding: 20px;
-    border-bottom: 1px solid var(--Base-Base-Black, #0A0A0B);
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
   }
-  .navItems a {
-    display: block;
-    padding: 10px;
-  }  
+  
+  .menuItems.active p {
+    margin-bottom: 10px;
+    color: #000;
+  }
+ 
+  .menuItems.active p:hover {
+    background-color: #444;
+    color: #fff;
+  }
+.menuIcons{
+    display: none;
+} 
 /* style */
 
 .logo>img{
     width: 170px;
 }
 .Jumbotron{
-    background: radial-gradient(243.32% 243.32% at 50% -68.85%, rgba(0, 0, 0, 0.67) 0%, rgba(131, 128, 128, 0.13) 1.35%, #000000 37.24%, #000 57.27%);
+    background-image: none;
     width: 100%;
-    height: 365px;
+    height: 255px;
+     background: radial-gradient(121.47% 291.44% at 50% -29.89%, rgba(26, 46, 226, 0.67) 0.33%, rgba(25, 74, 235, 0.13) 8.29%, #000 39.25%, #000 69.89%);
 }
 .text{
     margin-top: 3rem;
@@ -125,7 +104,7 @@ nav{
 }
 .sectionTwo>h2{
     margin-top: 35px;
-    font-size: 14px;
+    font-size: 13px;
     color: #fff;
     background-color:  #59C4F3;
     padding: var(--Spacing-s, 5px);

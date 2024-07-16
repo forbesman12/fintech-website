@@ -9,6 +9,21 @@
 </head>
 <body>
     <nav>
+        <button class="menuToggle">
+            <span></span>
+            <span></span>
+        </button>
+        <div class="logo">
+            <img src="./images/Frame 19 (1).png" alt="logo">
+
+        </div>
+        <div class="menuItems">
+            <a href=""><p>Home</p></a>
+            <a href="./business.html"><p>Business</p></a>
+            <a href=""><p>Company</p></a>
+        </div>
+    </nav>
+    <!-- <nav>
         <label for="toggle"><div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('.nav').classList.toggle('open')"></label>
             <span></span>
             <span></span>
@@ -25,10 +40,9 @@
                 <a href=""><p>Company</p></a>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <section class="Jumbotron">
-        <img src="./images/Star_9__1_-removebg-preview.png" alt="">
         <div class="text">
             <div class="textp">
                 <p>Welocome To Smart Banking</p>
@@ -255,5 +269,14 @@
             </div>
         </div>
     </footer>
+
+
+    <script>/*JavaScript to toggle the menu */
+        const menuToggle = document.querySelector('.menuToggle');
+        const menuItems = document.querySelector('.menuItems');
+        
+        menuToggle.addEventListener('click', () => {
+          menuItems.classList.toggle('active');
+        });</script>
 </body>
 </html>
