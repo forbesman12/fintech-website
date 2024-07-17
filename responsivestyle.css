@@ -53,17 +53,33 @@ nav{
     width: 170px;
 }
 .Jumbotron{
-    background-image: none;
+    background-image: url(./images/Ellipse\ 96.png);
+    background-color: #080808;
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 255px;
-     background: radial-gradient(121.47% 291.44% at 50% -29.89%, rgba(26, 46, 226, 0.67) 0.33%, rgba(25, 74, 235, 0.13) 8.29%, #000 39.25%, #000 69.89%);
+    height: 335px;
+}
+.jumbCard{
+    /* border: 2px solid #fff; */
+    display: flex;
+    padding-top: 165px;
+    /* align-items: end; */
+    overflow-x: auto;
+    justify-content: end;
+    flex-shrink: 0;
+}
+.jumbCard>img{
+    margin-left: 50px;
+    height: 200px;
+    display: block;
 }
 .text{
-    margin-top: 3rem;
+    margin-top: 6rem;
     width: 67%;
 }
 .textp>p{
-    font-size: 12px;
+    font-size: 15px;
 }
 .text>h1{
     font-size: 20px;
@@ -79,27 +95,29 @@ nav{
 }
 .spTwo{
     font-weight: 800;
-    font-size: 13px;
+    font-size: 15px;
 }
 .buttonsdiv{
+    /* border: 2px solid #fff; */
     width: 100%;
 }
 .buttonsdiv>button{
     border-radius: 16px;
     padding: var(--Spacing-sm, 5px) var(--Spacing-ml, 10px);
-    font-size: 11px;
-    width: 120px;
+    font-size: 12px;
+    width: 150px;
 }
 .buttonsdiv>p{
-    font-size: 11px;
+    font-size: 13px;
     padding-block: var(--Spacing-xs, 7px);
     gap: 1px;
+    width: 145px;
 }
 /* style for section two */
 .sectionTwo{
     width: 100%;
     background-image: none;
-    height: 530px;
+    height: 598px;
     padding: 0px;
 }
 .sectionTwo>h2{
@@ -117,13 +135,14 @@ nav{
     font-size: 16px;
 }
 .layout{
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    overflow-x: auto; 
+    scrollbar-width: none; 
 }
 .box{
     gap: 15px;
     padding: 17px;
-    width: 280px ;
+    min-width: 300px;
+    min-height: 90%;
 }
 .layout>.box:nth-child(2){
     gap: 15px;
@@ -141,7 +160,7 @@ nav{
     font-size: 17px;
 }
 .sectionTwo>h3{
-    font-size: 10px;
+    font-size: 11.5px;
     margin-top: 20px;
 }
 
